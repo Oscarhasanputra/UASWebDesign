@@ -28,18 +28,18 @@ $("#logout").on("click",(e)=>{
  let navigateUrl=url.join("/")
   window.location.href=navigateUrl
 })
-$(document).ready(()=>{
-  let elems= $(".data")
-  if(elems.length>0){
+// $(document).ready(()=>{
+//   let elems= $(".data")
+//   if(elems.length>0){
 
-    elems.map((index,elem)=>{
-      info=$(elem).data("info")
-      elem.innerText= localStorage.getItem(info)
-    })
-    document.getElementById("picture").src=localStorage.getItem("pictureid")
-    document.getElementById("picture2").src=localStorage.getItem("pictureid")
-  }
-})
+//     elems.map((index,elem)=>{
+//       info=$(elem).data("info")
+//       elem.innerText= localStorage.getItem(info)
+//     })
+//     document.getElementById("picture").src=localStorage.getItem("pictureid")
+//     document.getElementById("picture2").src=localStorage.getItem("pictureid")
+//   }
+// })
 $("a.dropdown-item,a.menu").on("click",function(e){
   e.preventDefault()
   let data=$(this).data("target")
