@@ -91,7 +91,7 @@ header.fixed-top{
   }
 .nav-menu a.menu{
     color:white;
-    font-size: 20px;
+    font-size: 16px;
 }
   .nav-menu li:hover > a,
   .nav-menu .menu-active > a {
