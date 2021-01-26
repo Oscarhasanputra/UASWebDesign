@@ -64,7 +64,7 @@ $("#burgerMenu").on("click",(ev)=>{
     showNav=$("#checkShow").is(":checked")
     
     navElem=$("nav#nav-menu-container ul li")
-    
+    console.log($("#checkShow2").is(":checked"))
     if(showNav){
       navElem.map((index,elem)=>{
         $(elem).css({"transition": `none`,'opacity':'0','right':'-20%'})
@@ -89,7 +89,7 @@ $("#button").on("click",()=>{
     data=res;
     let nim=document.getElementById("nim");
     let password=document.getElementById("password");
-  
+    
     if(data[nim.value] && data[nim.value].password==password.value){
       let login=data[nim.value];
       for(key in login){
@@ -97,6 +97,7 @@ $("#button").on("click",()=>{
         
       }
       localStorage.setItem("nim",nim.value);
+      localStorage.setItem("login","true")
       let url=window.location.href.split("/")
       url[url.length-1]="index.html";
      let navigateUrl=url.join("/")

@@ -14,6 +14,7 @@ body,html{
   margin: 0;
   padding: 0;
   list-style: none;
+  
 }
 header.fixed-top{
     z-index: 10; 
@@ -77,7 +78,7 @@ header.fixed-top{
 .nav-menu li:hover > ul,
 
 .nav-menu a {
-    padding: 10px 3em;
+    /* padding: 10px 3em; */
     text-decoration: none;
     display: inline-block;
     color: #555;
@@ -105,9 +106,12 @@ header.fixed-top{
     outline: none;
   }
 .burger{
+  float: right;
+  position: relative;
+  z-index: 1000;
     width: 30px;
     display:none;
-    margin-right: 5rem;
+    margin-right: 1rem;
     cursor: pointer;
 }
 .burger>div{
@@ -121,12 +125,7 @@ header.fixed-top{
 
 
 
-.nav-menu-responsive{
-    -webkit-transition: all 2s ease-in;
--moz-transition: all 2s ease-in;
--o-transition: all 2s ease-in;
-transition: all 2s ease-in;
-}
+
 @keyframes SlideMenu{
     from{
         right: -100%;
@@ -149,7 +148,7 @@ transition: all 2s ease-in;
     min-width: 70%;
   }
 }
-@media only screen and (max-width:630px){
+@media only screen and (max-width:768px){
     .burger{
       margin-top: 10px;
         display: inline-block;
@@ -163,30 +162,36 @@ transition: all 2s ease-in;
     /* header.fixed-top{
         height: 13% !important;
     } */
-    .nav-menu{
+    /* .nav-menu{
         display: none;
-    }
+    } */
     .nav-menu-responsive{
-        position: absolute;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
         top: 0px;
         right: -100%;
+        padding:3rem;
+        height: 100%;
+        width: 40%;
+        background-color: #b5b4b1;
     }
     #checkShow2[type=checkbox]:checked + main{
         height: 100%;
     }
-    #checkShow2[type=checkbox]:checked + main>div>nav>ul.nav-menu-responsive{
-        display: flex;
+    #checkShow2[type=checkbox]:checked + nav>ul.nav-menu-responsive{
+        
         animation-name: SlideMenu;
         animation-duration: 0.5s;
-        position: fixed;
+        
         top: 0px;
         right: 0%;
-        width: 40%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
         z-index: 100;
-        background-color: #b5b4b1;
     }
     #checkShow[type=checkbox]:checked + div>div:first-child{
         transform: rotate(45deg) translate(5px,5px);

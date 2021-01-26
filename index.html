@@ -22,10 +22,52 @@
         <div>
             <img src="images/logo.png" alt="Logo" height="50px">
         </div>
-        <div >
-          <img id="picture2" src="images/profil.jpeg" class="rounded-circle" style="width: 50px;height: 50px;object-fit: cover;" alt="profil">
+        <div style="flex-grow: 100;">
+          
+    <input type="checkbox" id="checkShow2"></input>
+          <nav id="nav-menu-container">
+            <ul class="nav-menu nav-menu-responsive d-md-flex flex-md-row justify-content-around">
+              <li><a class="menu" href="#" data-target="#home">Home</a></li>
+              <li><a class="menu" href="#" data-target="#profil">Profil</a></li>
+              <!-- <li><a class="menu" href="#" data-target="#article">Article</a></li> -->
+              <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+              <!-- <li><a href="#team">Team</a></li> -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link menu dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Stories</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" data-target="#what">What</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" data-target="#why">Why</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" data-target="#who">Who</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" data-target="#when">When</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" data-target="#where">Where</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" data-target="#how">How</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link menu dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img id="picture2" src="images/profil.jpeg" class="rounded-circle" style="width: 50px;height: 50px;object-fit: cover;" alt="profil"></a>
+                  <div class="dropdown-menu">
+                    <a href="#" id="logout" class="ml-3">Logout</a>
+                  </div>
         
-            <a href="#" id="logout" class="ml-3"> <img src="images/logout.png" alt=""></a>
+                  <!-- <a href="#" id="logout" class="ml-3"> <img src="images/logout.png" alt=""></a> -->
+                </li>
+              
+            </ul>
+            <input type="checkbox" id="checkShow"></input>
+            
+            <div class="burger" id="burgerMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          </nav>
+         
           </div>
         <!-- <div class="d-flex flex-rot justify-content-evenly">
             
@@ -33,43 +75,9 @@
         
     </header>
     
-    <input type="checkbox" id="checkShow2"></input>
     <main class="container-fluid image-background">
         <div class="d-flex flex-row" style="margin-top: 100px;">
-            <nav id="nav-menu-container">
-              <ul class="nav-menu nav-menu-responsive">
-                <li><a class="menu" href="#" data-target="#home">Home</a></li>
-                <li><a class="menu" href="#" data-target="#profil">Profil</a></li>
-                <!-- <li><a class="menu" href="#" data-target="#article">Article</a></li> -->
-                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-                <!-- <li><a href="#team">Team</a></li> -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link menu dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Stories</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#" data-target="#what">What</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#" data-target="#why">Why</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#" data-target="#who">Who</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#" data-target="#when">When</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#" data-target="#where">Where</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#" data-target="#how">How</a>
-                    </div>
-                  </li>
-                  
-                
-              </ul>
-              <input type="checkbox" id="checkShow"></input>
-              
-              <div class="burger" id="burgerMenu">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-              </div>
-            </nav>
+            
           </div>
         <div class="backdrop-container d-flex flex-column flex-lg-row flex-xl-row  mt-5">
            <!-- <div class="row"> -->
