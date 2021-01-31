@@ -23,7 +23,8 @@ body,html{
   background-color: #F0F1F5;
 }
 .input-style{
-  border-width: 0px;
+  border-width: 1px;
+  border-color: black;
   width:100%;
 }
 .nav-menu,
@@ -176,7 +177,7 @@ header.fixed-top{
         display: inline-block;
     }
     .form{
-       width:80% !important;
+       width:90% !important;
     }
     /* ul.nav-menu{
         display: none;
@@ -255,6 +256,17 @@ header.fixed-top{
     height: 100% !important;
     width: 100%;
     background-position: center;
+}
+.image-background2{
+  background-image: url(../images/bg-login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:white;
+  /* resize: both; */
+  background-attachment: fixed;
+  height: 100% !important;
+  width: 100%;
+  background-position: center;
 }
 .box-blended{
     position: relative;
@@ -356,10 +368,10 @@ text-transform: none;
 }
 .form{
     backdrop-filter: blur(10px);
-    height: 50%;
+    height: 60%;
     width: 50%;
-    background-color: rgba(255,255,255, 0.4);;
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 5px;
     margin: auto auto;
     position: relative;
     top: 20%;

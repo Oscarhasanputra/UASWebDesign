@@ -1,11 +1,13 @@
-url=window.location.href.split("/")
-pathUrl=url[url.length-1]
-console.log("url")
+let url=window.location.href.split("/")
+let pathUrl=url[url.length-1]
+
 // console.log(localStorag)
 if(pathUrl!="login.html"){
     if(localStorage.getItem("login")!="true"){
-        url[url.length-1]="login.html"
-        redirectUrl=url.join("/")
+        let urlSliced=url.slice(0,5)
+        urlSliced[urlSliced.length-1]="login.html"
+       
+        redirectUrl=urlSliced.join("/")
         window.location.href=redirectUrl;
         alert("Harap Login Terlebih Dahulu")
     }
