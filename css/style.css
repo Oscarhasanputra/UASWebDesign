@@ -3,6 +3,10 @@
 body,html{
     height: 100%;
 }
+main{
+  background: #f0f1f5;
+  padding-bottom: 2rem;
+}
 .input-style:focus{
   border-width: 0px;
   outline: none;
