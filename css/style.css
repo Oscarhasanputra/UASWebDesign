@@ -504,4 +504,7 @@ text-transform: none;
  .post-card{
    margin-bottom: 2px;
    padding: 5px;
+   text-decoration: none;
+   color:inherit;
+   display: block;
  }
