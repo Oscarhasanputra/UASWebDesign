@@ -7,15 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
 
-  <link rel="icon" href="images/logo-header.png">
+  <link rel="icon" href="../images/logo-header.png">
 
   <!-- <script src="./js/autentikasi.js"></script> -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/animate.min.css">
-  <link rel="stylesheet" href="./css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/slider.css">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -29,7 +30,7 @@
 <body>
   <header id="header" class="fixed-top d-flex flex-row justify-content-between p-4 bg-dark">
     <div>
-      <img src="images/logo.png" alt="Logo" height="50px">
+      <img src="../images/logo.png" alt="Logo" height="50px">
     </div>
     <div style="flex-grow: 100;">
 
@@ -51,7 +52,7 @@
             <li class="nav-item dropdown text-center">
               <a class="nav-link menu dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                 aria-haspopup="true" aria-expanded="false">
-                <img id="picture2" src="images/profil.jpeg" class="rounded-circle"
+                <img id="picture2" src="../images/profil.jpeg" class="rounded-circle"
                   style="width: 50px;height: 50px;object-fit: cover;" alt="profil"></a>
               <div class="dropdown-menu">
                 <a href="#" id="logout" class="ml-3">Logout</a>
@@ -83,7 +84,27 @@
      <div class="hi-prev"></div>
      <div class="hi-next"></div>
      <ul>
-         <li></li>
+         <li>
+           <img src="../images//slider1.jpg" alt="gambar slide 1">
+         </li>
+         <li>
+          <img src="../images//slider1.jpg" alt="gambar slide 1">
+        </li>
+        <li>
+          <img src="../images//slider1.jpg" alt="gambar slide 1">
+        </li>
+        <li>
+          <img src="../images//slider1.jpg" alt="gambar slide 1">
+        </li> 
+        <li>
+          <img src="../images//slider1.jpg" alt="gambar slide 1">
+        </li>
+         <li>
+          <img src="../images//slider2.jpg" alt="gambar slide 2">
+        </li>
+        <li>
+          <img src="../images//slider3.jpg" alt="gambar slide 3">
+        </li>
      </ul>
     </div>
      
@@ -146,8 +167,15 @@
     </div>
   </footer>
 </body>
-<script src="./js/wow.min.js"></script>
-<script>new WOW().init();</script>
-<script src="./js/main.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/slider.js"></script>
+<script>
+  $(".hi-slide").hiSlide(
+    {
+      speed: 1000,
+      interval: 2000,
 
+    }
+  )
+</script>
 </html>
