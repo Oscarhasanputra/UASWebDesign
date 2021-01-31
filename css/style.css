@@ -7,6 +7,11 @@ main{
   background: #f0f1f5;
   padding-bottom: 2rem;
 }
+textarea{
+  border-color: grey;
+  border-radius: 10px;
+  padding:20px;
+}
 .input-style:focus{
   border-width: 0px;
   outline: none;
