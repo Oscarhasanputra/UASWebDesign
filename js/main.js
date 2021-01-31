@@ -24,7 +24,7 @@ $("#logout").on("click",(e)=>{
   e.preventDefault();
   localStorage.clear();
   let url=window.location.href.split("/")
-  let urlSliced=url.slice(0,5)
+  let urlSliced=url.slice(0,4)
   urlSliced[urlSliced.length-1]="login.html";
  let navigateUrl=urlSliced.join("/")
   window.location.href=navigateUrl

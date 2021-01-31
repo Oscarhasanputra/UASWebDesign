@@ -4,7 +4,7 @@ let pathUrl=url[url.length-1]
 // console.log(localStorag)
 if(pathUrl!="login.html"){
     if(localStorage.getItem("login")!="true"){
-        let urlSliced=url.slice(0,5)
+        let urlSliced=url.slice(0,4)
         urlSliced[urlSliced.length-1]="login.html"
        
         redirectUrl=urlSliced.join("/")

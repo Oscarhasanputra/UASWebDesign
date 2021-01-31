@@ -3,30 +3,30 @@
 		"name"		:	"Oscar Hasan Putra",
 		"password"	:	"admin",
 		"quotes"	:	"Milikmu adalah MilikKu dan MilikKu adalah MilikKu",
-		"pictureid"	:	"/uaswebdesign/images/Oscar.jpeg"
+		"pictureid"	:	"/images/Oscar.jpeg"
 	},
 	"20181000023"	:{
 		"name"		:	"Vanny Melati",
 		"password"	:	"admin",
 		"quotes"	:	"Usaha tidak mengkhianati hasil :)",
-		"pictureid"	:	"/uaswebdesign/images/Vanny.jpeg"
+		"pictureid"	:	"/images/Vanny.jpeg"
 	},
 	"20181000047"	:	{
 		"name"		:	"Ardi Ferdinan",
 		"password"	:	"admin",
 		"quotes"	:	"Seni adalah Ledakan",
-		"pictureid"	:	"/uaswebdesign/images/Ardi.jpeg"
+		"pictureid"	:	"/images/Ardi.jpeg"
 	},
 	"20181000050"	:	{
 		"name"		:	"Geraldi Aditya",
 		"password"	:	"admin",
 		"quotes"	:	"Selamat! Anda memasuki semester dimana anda menyerah,dan ingin nikah saja",
-		"pictureid"	:	"/uaswebdesign/images/Geraldi.jpeg"
+		"pictureid"	:	"/images/Geraldi.jpeg"
 	},
 	"20181000054"	:	{
 		"name"		:	"Endo",
 		"password"	:	"admin",
 		"quotes"	:	"Mau kuliah udah males,mau berhenti udah nanggung",
-		"pictureid"	:	"/uaswebdesign/images/Endo.jpeg"
+		"pictureid"	:	"/images/Endo.jpeg"
 	}
 }
